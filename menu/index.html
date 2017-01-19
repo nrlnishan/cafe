@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Croissant+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"><!-- 
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="styleshee -->
+<link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.ui/1.11.3/jquery-ui.min.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="../assets/style2.css">
+</head>
+<body>
+	<div>
+		<div class="header-nav-wrp">
+				<nav class="navbar navbar-default navbar-fixed-top"> <div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="#">Website Logo</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li id="login"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="menu-option"><a href="#">Home</a></li>
+							<li class="menu-option"><a href="#about">About</a></li>
+							<li class="menu-option"><a href="#menu">Menu</a></li> 
+							<li class="menu-option"><a href="#reservation">Reservation</a></li>
+							<li class="menu-option"><a href="#contact">Contact</a></li> 
+						</ul>
+					</div>
+				</div>
+			</nav>				
+		</div>
+		<div class="menu-wrp" id="menu">
+		<div class="container">
+			<div class="menu-header">
+				<div class="menu-subheader">
+					Find Our
+				</div>
+				<div class="menu-mainheader">
+					MENU
+				</div>
+			</div>
+			<ul class="nav nav-tabs nav-justified menu-layer">
+				<li role="presentation"class="active">
+					<a href="#menu1">
+						<span class="box">
+							<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/food.png">
+							<span>
+								FOOD
+								<span class="sub-title">
+									Cakes & Cookies
+								</span>
+							</span>
+						</span>
+					</a>
+					<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</li>
+				<li role="presentation">
+					<a href="#menu2">
+						<span class="box">
+							<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/chef.png">
+							<span>
+								CHEF
+								<span class="sub-title">
+									Breakfast
+								</span>
+							</span>
+						</span>
+					</a>
+					<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</li>
+				<li role="presentation">
+					<a href="#menu3">
+						<span class="box">
+							<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/drink.png">
+							<span>
+								DRINKS
+								<span class="sub-title">
+									Hot & Cold
+								</span>
+							</span>
+						</span>
+					</a>
+					<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</li>
+				<li role="presentation">
+					<a href="#menu4">
+							<span class="box">
+								<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/food.png">
+								<span>
+									FOOD
+									<span class="sub-title">
+										Cakes & Cookies
+									</span>
+								</span>
+							</span>
+						</a>
+						<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</li>
+				</ul>
+				<div class="tab-content">
+					<div id="menu1" class="tab-pane fade in active">
+						<ul>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/img_gallery_3-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/img_gallery_3-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/img_gallery_3-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/07/img_gallery_3-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+						<ul>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/05/img_blog_post_2-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/05/img_blog_post_2-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/05/img_blog_post_2-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="menu-item-cont">
+									<div class="item-left">
+										<div class="item-left-img">
+											<img src="http://resca.thimpress.com/wp-content/uploads/2015/05/img_blog_post_2-180x180.jpg">
+										</div>
+										<div class="item-left-details">
+											<h3 class="item-name">Sandwich</h3>
+											<div class="item-desc">SOPRESSA SALAMI, BASIL PESTO, AVOCADO, TOMATO, MELTED CHEESE & MESCULIN   
+											</div>
+										</div>
+									</div>
+									<div class="item-right">
+										<span class="price-title">
+											Price
+										</span>
+										<span class="price">
+											$9.9
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="menu3" class="tab-pane fade">
+						<h3>Menu 3</h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					</div>
+					<div id="menu4" class="tab-pane fade">
+						<h3>Menu 4</h3>
+						<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+	<script type="text/javascript" src="assets/main.js"></script>
+
+</body>
+</html>
