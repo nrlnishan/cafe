@@ -410,7 +410,7 @@ hr{
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 .menu-wrp .specials-header:before, .menu-wrp .specials-header:after {
-	top: 8%;
+	top: 16%;
 }
 .specials-header:before {
 	left: 35%;
