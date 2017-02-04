@@ -9,7 +9,7 @@ body {
 	width: 100%;
 }
 .navbar-default {
-	background-color: #55526d;
+	background-color: rgba(70,75,110,0.8);
 	border-color: #55526d;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a{
@@ -148,17 +148,14 @@ body {
 
 }
 .reservation-header{
-	width: 70%;
-	padding: 0px 0px 30px 0px;
-	margin: 0 auto;
-	position: relative;
 	text-align: center;
 }
-.reservation-header,.about-header, .menu-header, .specials-header {
+.reservation-header,.about-header, .menu-header, .specials-header, .contact-header {
 	font-size: 34px;
 	font-family: 'Khand', sans-serif;
 	font-weight: 700;
 	color: #ffb606;
+	position: relative;
 }
 .reservation-mainheader,.about-mainheader, .menu-mainheader{
 	font-size: 54px;
@@ -467,20 +464,9 @@ hr{
 .multi-item-carousel .carouse-control.right {
   background-image: none;
 }
-/*body {
-  background: #333;
-  color: #ddd;
-}
-h1 {
-  color: white;
-  font-size: 2.25em;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  text-shadow: 0px 2px 0px #000000;
-}*/
+
 .carousel {
-	position: relative;
+	position: static;
 }
 .specials-wrp .col-md-12{
 	position: static;
@@ -488,7 +474,7 @@ h1 {
 .specials-wrp{
 	background: url("../images/bg-4.jpg") no-repeat;
 	background-position: 50% 50%;
-	background-size: auto;
+	background-size: cover;
 	position: relative;
 	width: 100%;
 	max-height: 5000px;
@@ -507,7 +493,7 @@ h1 {
 }*/
 .menu-item-blk {
 	width: 50%;
-	float: left;
+	height: 120px;
 	padding: 10px 20px 10px 0px;
 }
 .item-left {
@@ -518,6 +504,7 @@ h1 {
 	width: 10%;
 	float: right;
 }
+
 .item-left-img {
 	width: 20%;
 	padding: 15px;
@@ -557,4 +544,63 @@ h1 {
 }
 .menu-wrp {
 	position: relative;
+}
+
+.app-wrp {
+	width: 100%;
+	padding: 30px 0px;
+	background-color: #cb686a;
+	margin: 0 auto;
+}
+.app-text {
+	float: left;
+	text-align: center;
+	color: white;
+}
+.footer-wrp {
+	background-color: #34384c;
+	/*#4e272b #542b2f*/
+}
+
+.contact-form {
+	padding: 0;
+	background-color: #535777;
+}
+.contact-form input{
+	background-color: #4b4f6c;
+	border-color: #34384c;
+}
+#comments {
+	background-color: #4b4f6c;
+	border-color: #34384c;
+	color: white;
+}
+.contact-address {
+	color: white;
+}
+.contact-header .sub-header:before, .contact-header .sub-header:after {
+	top: 40%;
+}
+.contact-header .sub-header:before {
+	left: 20%;
+}
+.contact-header .sub-header:after {
+	right: 20%;
+}
+.floatL {
+	float: left;
+}
+.floatR {
+	float: right;
+}
+.ui-widget-content {
+	background-color: 
+}
+.ui-state-highlight{
+	background-color: #337ab7;
+}
+
+.orange-red {
+	color: #fa5135;
+	color: #f7d08a;
 }
