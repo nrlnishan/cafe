@@ -12,6 +12,10 @@ body {
 	background-color: rgba(70,75,110,0.8);
 	border-color: #55526d;
 }
+.navbar-brand img {
+	width: 170px;
+	height: auto;
+}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a{
 	border-bottom: 2px solid #e5493a ;
 	color: white;
@@ -23,6 +27,7 @@ body {
 	background-color: #1c1744;
 }
 .navbar-default .navbar-nav>li>a{
+	padding: 20px 20px;
 	color: white;
 	font-size: 14px;
 	font-family: 'Open Sans';
@@ -105,9 +110,9 @@ body {
 	padding: 10px 10px 20px 10px;
 	width: 30%;
 	background: rgba(255,255,255,0.50);
-  animation-duration: 2s;
+ /* animation-duration: 2s;
   animation-iteration-count: 1;
-  animation-timing-function: ease;
+  animation-timing-function: ease;*/
 }
 
 #caption1{
@@ -142,6 +147,9 @@ body {
 }
 #about,#menu, #reservation, #contact, #specials{
 	padding: 60px 0px;
+}
+#specials{
+	padding-bottom: 80px;
 }
 .reservation-wrp{
 	background-color: #4f5373;
@@ -468,6 +476,10 @@ hr{
 .carousel {
 	position: static;
 }
+
+#myCarousel {
+	position: relative;
+}
 .specials-wrp .col-md-12{
 	position: static;
 }
@@ -491,17 +503,23 @@ hr{
 	width: 25%;
 	text-align: center;
 }*/
+.carousel-indicators li {
+	border-color: red;
+}
+.carousel-indicators .active {
+	background-color: red;
+}
 .menu-item-blk {
 	width: 50%;
 	height: 120px;
 	padding: 10px 20px 10px 0px;
 }
 .item-left {
-	width: 90%;
+	width: 80%;
 	float: left;
 }
 .item-right {
-	width: 10%;
+	width: 20%;
 	float: right;
 }
 
@@ -516,7 +534,7 @@ hr{
 }
 .item-left-details {
 	padding: 0px 5px;
-	width: 80%;
+	width: 100%;
 	float: right;
 	font-family: 'Roboto';
 }
@@ -553,9 +571,22 @@ hr{
 	margin: 0 auto;
 }
 .app-text {
-	float: left;
 	text-align: center;
 	color: white;
+}
+.app-link-cont {
+	width: 22%;
+	margin: 0 auto;
+}
+.app-icon {
+	display: inline-block;
+}
+.app-icon:first-child {
+	margin-right: 20%;
+}
+.app-link-cont img{
+	width: 75px;
+	height: auto;
 }
 .footer-wrp {
 	background-color: #34384c;
