@@ -9,8 +9,12 @@ body {
 	width: 100%;
 }
 .navbar-default {
-	background-color: #55526d;
+	background-color: rgba(70,75,110,0.8);
 	border-color: #55526d;
+}
+.navbar-brand img {
+	width: 170px;
+	height: auto;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a{
 	border-bottom: 2px solid #e5493a ;
@@ -23,6 +27,7 @@ body {
 	background-color: #1c1744;
 }
 .navbar-default .navbar-nav>li>a{
+	padding: 20px 20px;
 	color: white;
 	font-size: 14px;
 	font-family: 'Open Sans';
@@ -105,9 +110,9 @@ body {
 	padding: 10px 10px 20px 10px;
 	width: 30%;
 	background: rgba(255,255,255,0.50);
-  animation-duration: 2s;
+ /* animation-duration: 2s;
   animation-iteration-count: 1;
-  animation-timing-function: ease;
+  animation-timing-function: ease;*/
 }
 
 #caption1{
@@ -140,25 +145,25 @@ body {
 .body-wrp{
 	width: 100%;
 }
-#about,#menu, #reservation, #contact{
+#about,#menu, #reservation, #contact, #specials{
 	padding: 60px 0px;
+}
+#specials{
+	padding-bottom: 80px;
 }
 .reservation-wrp{
 	background-color: #4f5373;
 
 }
-.reservation-header,.about-header, .menu-header{
-	width: 70%;
-	padding: 0px 0px 30px 0px;
-	margin: 0 auto;
-	
+.reservation-header{
 	text-align: center;
 }
-.reservation-subheader,.about-subheader, .menu-subheader, .specials-header {
+.reservation-header,.about-header, .menu-header, .specials-header, .contact-header {
 	font-size: 34px;
-	font-family: 'Open Sans';
+	font-family: 'Khand', sans-serif;
 	font-weight: 700;
 	color: #ffb606;
+	position: relative;
 }
 .reservation-mainheader,.about-mainheader, .menu-mainheader{
 	font-size: 54px;
@@ -345,12 +350,15 @@ hr{
 	color: #666;
 }*/
 /*about*/
+.about-wrp {
+	position: relative;
+}
 .about-top span{
 	display: block;
 	text-align: center;
 }
-.about-top.about-head{
-	color: ;
+.about-header{
+	position: relative;
 }
 .about-content{
 	margin: 0 auto;
@@ -394,28 +402,28 @@ hr{
 	width: 100%;
 	height: auto;
 }*/
-.specials-header {
-	font-family: 'Khand', sans-serif;
+.sub-header {
 	text-align: center;
 	margin-bottom: 20px;
 }
-.specials-header:before, .specials-header:after {
+.sub-header:before, .sub-header:after {
     content: "";
     position: absolute;
-    top: 14%;
+    top: 17%;
     height: 2px;
     width: 40px;
     margin: 0 -15px;
     background-color: #ffb606;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
-.menu-wrp .specials-header:before, .menu-wrp .specials-header:after {
-	top: 8%;
+
+.menu-header {
+	position: relative;
 }
-.specials-header:before {
+.sub-header:before {
 	left: 35%;
 }
-.specials-header:after {
+.sub-header:after {
 	right: 35%;
 }
 .special-title {
@@ -464,20 +472,13 @@ hr{
 .multi-item-carousel .carouse-control.right {
   background-image: none;
 }
-/*body {
-  background: #333;
-  color: #ddd;
-}
-h1 {
-  color: white;
-  font-size: 2.25em;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  text-shadow: 0px 2px 0px #000000;
-}*/
+
 .carousel {
 	position: static;
+}
+
+#myCarousel {
+	position: relative;
 }
 .specials-wrp .col-md-12{
 	position: static;
@@ -485,7 +486,7 @@ h1 {
 .specials-wrp{
 	background: url("../images/bg-4.jpg") no-repeat;
 	background-position: 50% 50%;
-	background-size: auto;
+	background-size: cover;
 	position: relative;
 	width: 100%;
 	max-height: 5000px;
@@ -502,19 +503,26 @@ h1 {
 	width: 25%;
 	text-align: center;
 }*/
+.carousel-indicators li {
+	border-color: red;
+}
+.carousel-indicators .active {
+	background-color: red;
+}
 .menu-item-blk {
 	width: 50%;
-	float: left;
-	padding: 10px 20px;
+	height: 120px;
+	padding: 10px 20px 10px 0px;
 }
 .item-left {
-	width: 90%;
+	width: 80%;
 	float: left;
 }
 .item-right {
-	width: 10%;
+	width: 20%;
 	float: right;
 }
+
 .item-left-img {
 	width: 20%;
 	padding: 15px;
@@ -526,7 +534,7 @@ h1 {
 }
 .item-left-details {
 	padding: 0px 5px;
-	width: 80%;
+	width: 100%;
 	float: right;
 	font-family: 'Roboto';
 }
@@ -554,4 +562,76 @@ h1 {
 }
 .menu-wrp {
 	position: relative;
+}
+
+.app-wrp {
+	width: 100%;
+	padding: 30px 0px;
+	background-color: #cb686a;
+	margin: 0 auto;
+}
+.app-text {
+	text-align: center;
+	color: white;
+}
+.app-link-cont {
+	width: 12%;
+	margin: 0 auto;
+}
+.app-icon {
+	display: inline-block;
+}
+.app-icon:last-child {
+	float: right;
+}
+.app-link-cont img{
+	width: 50px;
+	height: auto;
+}
+.footer-wrp {
+	background-color: #34384c;
+	/*#4e272b #542b2f*/
+}
+
+.contact-form {
+	padding: 0;
+	background-color: #535777;
+}
+.contact-form input{
+	background-color: #4b4f6c;
+	border-color: #34384c;
+}
+#comments {
+	background-color: #4b4f6c;
+	border-color: #34384c;
+	color: white;
+}
+.contact-address {
+	color: white;
+}
+.contact-header .sub-header:before, .contact-header .sub-header:after {
+	top: 40%;
+}
+.contact-header .sub-header:before {
+	left: 20%;
+}
+.contact-header .sub-header:after {
+	right: 20%;
+}
+.floatL {
+	float: left;
+}
+.floatR {
+	float: right;
+}
+.ui-widget-content {
+	background-color: 
+}
+.ui-state-highlight{
+	background-color: #337ab7;
+}
+
+.orange-red {
+	color: #fa5135;
+	color: #f7d08a;
 }
